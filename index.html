@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Meta tags -->
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+	<!-- Title -->
+	<title>To joy</title>
+	
+	<!-- Css links -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/carousel.css">
+	<link rel="stylesheet" type="text/css" href="css/svg-sinuca.css">
+</head>
+<body>
+	<section>
+		<article class="carousel">
+			<h1 class="title">Carousel - Only Css</h1>
+			<ul class="panes">
+			    <li>
+			      <h2>Banda Revesty - Making Of</h2>
+			      <img src="/img/pane-01.jpg" alt="Banda Revesty">
+			    </li>
+
+			    <li>
+			      <h2>Banda Revesty - Yoseph Santos</h2>
+			      <img src="/img/pane-02.jpg" alt="Banda Revesty">
+			    </li>
+
+			    <li>
+			      <h2>Banda Revesty - Promo</h2>
+			      <img src="/img/pane-03.jpg" alt="Banda Revesty">
+			    </li>
+
+			    <li>
+			      <h2>Banda Revesty - Promo</h2>
+			      <img src="/img/pane-04.jpg" alt="Banda Revesty">
+			    </li>
+
+			    <li>
+			      <h2>Banda Revesty - Promo</h2>
+			      <img src="/img/pane-05.jpg" alt="Banda Revesty">
+			    </li>
+			  </ul>
+		</article>
+
+		<!-- SVG Sinuca -->
+		<article class="svg">
+			<h1 class="title">SVG - Sinuca</h1>
+			<p class="info">Clique no traço marron para iniciar a animação.</p>
+			<svg width="500" height="100">
+			    <!-- Line -->			    
+			    <line id="black-line" x1="0" y1="50" x2="20" y2="50" stroke-width="7" stroke="brown"/>
+			    <animate 
+			           id="taco"
+			           xlink:href="#black-line"
+			           attributeName="x2"
+			           from="20"
+			           to="50" 
+			           dur="0.8s"
+			           begin="click" />
+				
+				<!-- Circle white --> 
+			    <circle id="white-circle" r="15" cx="50" cy="50" fill="white" />
+			    <animate 
+			    	   id="whiteBoll"
+			           xlink:href="#white-circle"
+			           attributeName="cx"
+			           from="50"
+			           to="420" 
+			           dur="1s"
+			           begin="taco.end"
+			           fill="white" />
+
+			    <!-- Circle red --> 
+	            <circle id="red-circle" r="15" cx="450" cy="50" fill="red" />
+			    <animate 
+		           xlink:href="#red-circle"
+		           attributeName="cx"
+		           from="450"
+		           to="480" 
+		           dur="0.7s"
+		           begin="whiteBoll.end-20ms"
+		           fill="red" />
+
+		        <!-- Circle yellow --> 
+	            <circle id="yellow-circle" r="15" cx="470" cy="26" fill="yellow" />
+			    <animate 
+		           xlink:href="#yellow-circle"
+		           attributeName="cy"
+		           from="26"
+		           to="10" 
+		           dur="0.7s"
+		           begin="whiteBoll.end-20ms"
+		           fill="yellow" />
+
+		        <!-- Circle blue --> 
+	            <circle id="blue-circle" r="15" cx="470" cy="74" fill="blue" />
+			    <animate 
+		           xlink:href="#blue-circle"
+		           attributeName="cy"
+		           from="77"
+		           to="85" 
+		           dur="0.7s"
+		           begin="whiteBoll.end-20ms"
+		           fill="blue" />
+			</svg>	
+		</article>
+	</section>
+</body>
+</html>

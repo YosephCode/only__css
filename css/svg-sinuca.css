@@ -1,0 +1,25 @@
+.svg {
+	margin-top: 30px;
+}
+.svg .info{
+	font-size: 18px;
+}
+svg {
+  border: 3px solid gray;
+  display: block;
+  margin: 1em auto;
+  background-color: rgba(61, 181, 91, 0.75);
+}
+#test{
+	-moz-animation:colored 1s initial-scale;
+	-webkit-animation:colored 1s initial-scale;
+	animation: colored 1s initial-scale;
+}
+@keyframes colored{
+    0%    { fill:black; }
+    15%   { fill:green; }
+    25.5% { fill: red; }
+    55.5% { fill: yellow; }
+    70.5% { fill: brown; }
+    100%  { fill: pink; }
+}
