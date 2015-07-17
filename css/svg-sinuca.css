@@ -1,9 +1,5 @@
-.svg {
-	margin-top: 30px;
-}
-.svg .info{
-	font-size: 18px;
-}
+.svg {}
+
 svg {
   border: 3px solid gray;
   display: block;

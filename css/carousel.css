@@ -17,6 +17,14 @@
     text-align:right;
     color:#fff;
     background-color:rgba(0,0,0,0.75);
+    transition: all .1s ease;
+    cursor: -webkit-zoom-in;
+    z-index: 10;
+}
+.carousel h2:hover {
+    font-size: 3em;
+    padding: 2.5em;
+    text-align: center;
 }
 .carousel .panes {
 	width: 500%;
@@ -32,7 +40,21 @@
 	overflow: hidden;
 	float: left; /*todas na mesma posição*/
 	width: 20%; /*Todas imagens com 20% de largura*/
+    transition: all 1.5s ease; 
+    border-radius: 8px;
+    cursor: -webkit-zoom-in;
 }
+.carousel .panes > li img {
+    transition: all .2s ease; 
+    border-radius: 8px;
+}
+.carousel .panes > li img:hover { 
+    transform: scale(1.5); 
+}
+.carousel .panes > li:nth-child(1) img:hover, .carousel .panes > li:nth-child(4) img:hover , .carousel .panes > li:nth-child(5) img:hover { 
+    transform: scale(1.1); 
+}
+
 @keyframes carousel{
     0%    { left:0; }
     11%   { left:0; }

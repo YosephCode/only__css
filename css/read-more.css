@@ -1,0 +1,18 @@
+.read-more p {
+	/*overflow: hidden;*/
+	display: block;
+}
+.read-more p.more-text {
+	display: none;
+}
+.read-more .more {
+	font-size: 18px;
+	font-weight: bold;
+}
+.read-more .more:hover ~ p.more-text, .read-more .more-text:hover {
+	display: block;
+	background-color: white;
+	padding-bottom: 50px;
+	transform:translate(10px);
+	transform:translateY(-20px);
+}
