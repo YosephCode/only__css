@@ -29,7 +29,7 @@
   content: '';
 }
 [contenteditable]:focus:after {
-  content: ' Clique fora para salvar ou tire o mouse de cima do texto';
+  content: ' Clique fora para salvar as alterações ou tire o mouse de cima do texto';
   font-style: italic;
   font-size: 14px;
   font-family: sans-serif;
