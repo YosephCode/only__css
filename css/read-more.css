@@ -16,3 +16,26 @@
 	transform:translate(10px);
 	transform:translateY(-20px);
 }
+[contenteditable]:hover:before {
+  content: ' Clique no texto para editar';
+  font-style: italic;
+  font-size: 14px;
+  font-family: sans-serif;
+  color: rgb(86, 141, 143);
+  display: block;
+  .text-stroke(0);
+}
+[contenteditable]:focus:before {
+  content: '';
+}
+[contenteditable]:focus:after {
+  content: ' Clique fora para salvar ou tire o mouse de cima do texto';
+  font-style: italic;
+  font-size: 14px;
+  font-family: sans-serif;
+  display: block;
+  margin-top: 15px;
+  color: rgb(28, 53, 246);
+  font-weight: bold;
+  .text-stroke(0);
+}
