@@ -15,9 +15,12 @@
 	<link rel="stylesheet" type="text/css" href="css/carousel.css">
 	<link rel="stylesheet" type="text/css" href="css/svg-sinuca.css">
 	<link rel="stylesheet" type="text/css" href="css/read-more.css">
+	<link rel="stylesheet" type="text/css" href="css/controlLabels.css">
+	
 </head>
 <body>
 	<section>
+		<!-- Carousel -->
 		<article class="main carousel">
 			<h1 class="title">Carousel - Only Css</h1>
 			<p class="info">Zoom na imagem e no texto.</p>
@@ -53,9 +56,9 @@
 		<article class="main svg">
 			<h1 class="title">SVG - Sinuca</h1>
 			<p class="info">Clique no traço marron para iniciar a animação.</p>
-			<svg width="320" height="100">
+			<svg width="300" height="100">
 			    <!-- Line -->			    
-			    <line id="black-line" x1="0" y1="50" x2="20" y2="50" stroke-width="7" stroke="brown"/>
+			    <line id="black-line" x1="0" y1="50" x2="20" y2="50" stroke-width="10" stroke="brown"/>
 			    <animate 
 			           id="taco"
 			           xlink:href="#black-line"
@@ -72,24 +75,24 @@
 			           xlink:href="#white-circle"
 			           attributeName="cx"
 			           from="50"
-			           to="240" 
+			           to="220" 
 			           dur="1s"
 			           begin="taco.end"
 			           fill="white" />
 
 			    <!-- Circle red --> 
-	            <circle id="red-circle" r="15" cx="270" cy="50" fill="red" />
+	            <circle id="red-circle" r="15" cx="250" cy="50" fill="red" />
 			    <animate 
 		           xlink:href="#red-circle"
 		           attributeName="cx"
-		           from="270"
+		           from="250"
 		           to="280" 
 		           dur="0.7s"
 		           begin="whiteBoll.end-20ms"
 		           fill="red" />
 
 		        <!-- Circle yellow --> 
-	            <circle id="yellow-circle" r="15" cx="290" cy="26" fill="yellow" />
+	            <circle id="yellow-circle" r="15" cx="270" cy="26" fill="yellow" />
 			    <animate 
 		           xlink:href="#yellow-circle"
 		           attributeName="cy"
@@ -100,7 +103,7 @@
 		           fill="yellow" />
 
 		        <!-- Circle blue --> 
-	            <circle id="blue-circle" r="15" cx="290" cy="74" fill="blue" />
+	            <circle id="blue-circle" r="15" cx="270" cy="74" fill="blue" />
 			    <animate 
 		           xlink:href="#blue-circle"
 		           attributeName="cy"
@@ -128,22 +131,38 @@
 				Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
 			</p>
 		</article>
-		<!-- 
-#demo-4:hover img {
-  margin-left: 200px;
-}
-		#demo-4 img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  -webkit-transition: margin-left;
-  -webkit-transition-property: margin-left;
-  -webkit-transition-duration: 250ms;
-  -webkit-transition-timing-function: ease-in;
-  -webkit-transition-delay: initial;
-  -webkit-transition-timing-function: ease-in;
-  -webkit-transition-duration: 250ms;
-} -->
+
+		<article class="main labels">
+			<h1 class="title">Labels Controls - Responsividade</h1>
+			<p class="info">Imagens responsivas. Controlando com labels</p>
+			
+			<!-- Control images by labels-->
+		    <div class="pictures">
+		        <input type="radio" id="radio-img1" name="revesty" checked="checked" />
+		        <div class="picture">
+		          <img class="picture--img" src="img/pane-01.jpg">
+		          <p class="picture--info">Banda Revesty</p>
+		        </div>
+
+		        <input type="radio" id="radio-img2" name="revesty" checked="checked" />
+		        <div class="picture">
+		          <img class="picture--img" src="img/pane-02.jpg">
+		          <p class="picture--info">Banda Revesty - Yoseph</p>
+		        </div>
+
+		        <input type="radio" id="radio-img3" name="revesty" checked="checked" />
+		        <div class="picture">
+		          <img class="picture--img" src="img/pane-03.jpg">
+		          <p class="picture--info">Banda Revesty</p>
+		        </div>
+
+		        <div class="control-buttons">
+		          <label for="radio-img1">Image 1</label>
+		          <label for="radio-img2">Image 2</label>
+		          <label for="radio-img3">Image 3</label>
+		        </div>
+		      </div>
+		</article>
 	</section>
 </body>
 </html>
