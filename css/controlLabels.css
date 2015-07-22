@@ -100,3 +100,8 @@
     display: block;
   }
 }
+@media (max-width: 479px) {
+  .picture .picture--img {
+    height: 225px;
+  }
+}
