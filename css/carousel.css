@@ -85,4 +85,8 @@
 	section {
 		width: 95%;
 	}
+    .carousel h2:hover {
+        font-size: 1.3em;
+        padding: 1.5em;
+    }
 }
